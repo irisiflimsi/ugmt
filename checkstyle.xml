@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: ugmt2
+    Description: none
+-->
+<module name="Checker">
+  <property name="severity" value="warning"/>
+  <module name="TreeWalker">
+    <module name="JavadocMethod">
+      <property name="suppressLoadErrors" value="true"/>
+    </module>
+    <module name="JavadocType"/>
+    <module name="JavadocVariable">
+      <property name="excludeScope" value="private"/>
+      <property name="scope" value="package"/>
+    </module>
+    <module name="JavadocStyle"/>
+    <module name="ConstantName"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="LocalVariableName"/>
+    <module name="MemberName"/>
+    <module name="MethodName"/>
+    <module name="PackageName"/>
+    <module name="ParameterName"/>
+    <module name="StaticVariableName"/>
+    <module name="TypeName"/>
+    <module name="AvoidStarImport"/>
+    <module name="IllegalImport"/>
+    <module name="RedundantImport"/>
+    <module name="UnusedImports"/>
+    <module name="LineLength">
+      <property name="severity" value="ignore"/>
+      <property name="max" value="200"/>
+      <property name="tabWidth" value="4"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="MethodLength"/>
+    <module name="ParameterNumber"/>
+    <module name="EmptyForIteratorPad"/>
+    <module name="GenericWhitespace"/>
+    <module name="MethodParamPad"/>
+    <module name="NoWhitespaceAfter"/>
+    <module name="NoWhitespaceBefore"/>
+    <module name="OperatorWrap"/>
+    <module name="ParenPad"/>
+    <module name="TypecastParenPad"/>
+    <module name="WhitespaceAfter"/>
+    <module name="WhitespaceAround"/>
+    <module name="ModifierOrder"/>
+    <module name="RedundantModifier"/>
+    <module name="AvoidNestedBlocks"/>
+    <module name="EmptyBlock"/>
+    <module name="LeftCurly"/>
+    <module name="NeedBraces"/>
+    <module name="AvoidInlineConditionals"/>
+    <module name="EmptyStatement"/>
+    <module name="EqualsHashCode"/>
+    <module name="HiddenField"/>
+    <module name="IllegalInstantiation"/>
+    <module name="InnerAssignment"/>
+    <module name="MagicNumber">
+      <property name="ignoreNumbers" value="-1, 0, 1, 2, 3, 4, 5, 128, 256"/>
+    </module>
+    <module name="MissingSwitchDefault"/>
+    <module name="SimplifyBooleanExpression"/>
+    <module name="SimplifyBooleanReturn"/>
+    <module name="DesignForExtension">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="FinalClass"/>
+    <module name="HideUtilityClassConstructor"/>
+    <module name="InterfaceIsType"/>
+    <module name="VisibilityModifier"/>
+    <module name="ArrayTypeStyle"/>
+    <module name="FinalParameters"/>
+    <module name="UpperEll"/>
+    <module name="RightCurly">
+      <property name="option" value="alone_or_singleline"/>
+      <property name="tokens" value="LITERAL_TRY,LITERAL_CATCH,LITERAL_FINALLY,LITERAL_IF,LITERAL_ELSE,CLASS_DEF,METHOD_DEF,CTOR_DEF,LITERAL_FOR,LITERAL_WHILE,STATIC_INIT,INSTANCE_INIT"/>
+    </module>
+    <module name="MissingDeprecated"/>
+    <module name="MissingOverride"/>
+    <module name="PackageAnnotation"/>
+    <module name="AbstractClassName"/>
+    <module name="ClassTypeParameterName"/>
+    <module name="MethodTypeParameterName"/>
+    <module name="InterfaceTypeParameterName"/>
+    <module name="AnonInnerLength"/>
+    <module name="OuterTypeNumber"/>
+    <module name="MethodCount"/>
+    <module name="EmptyForInitializerPad"/>
+    <module name="CovariantEquals"/>
+    <module name="DefaultComesLast"/>
+    <module name="DeclarationOrder"/>
+    <module name="EqualsAvoidNull"/>
+    <module name="FallThrough"/>
+    <module name="FinalLocalVariable">
+      <property name="tokens" value="PARAMETER_DEF,VARIABLE_DEF"/>
+    </module>
+    <module name="ExplicitInitialization"/>
+    <module name="IllegalThrows"/>
+    <module name="IllegalType">
+      <property name="tokens" value="METHOD_DEF,PARAMETER_DEF,VARIABLE_DEF"/>
+    </module>
+    <module name="ModifiedControlVariable"/>
+    <module name="MultipleStringLiterals">
+      <property name="ignoreStringsRegexp" value="^&quot;.?&quot;$"/>
+    </module>
+    <module name="NoClone"/>
+    <module name="NoFinalizer"/>
+    <module name="PackageDeclaration"/>
+    <module name="StringLiteralEquality"/>
+    <module name="SuperClone"/>
+    <module name="SuperFinalize"/>
+    <module name="OneStatementPerLine"/>
+    <module name="VariableDeclarationUsageDistance"/>
+    <module name="OverloadMethodsDeclarationOrder"/>
+    <module name="InnerTypeLast"/>
+    <module name="MutableException"/>
+    <module name="ThrowsCount">
+      <property name="max" value="3"/>
+    </module>
+    <module name="OneTopLevelClass"/>
+    <module name="TodoComment">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="UncommentedMain">
+      <property name="excludedClasses" value="miju.rpg.ugmt.HttpServer"/>
+    </module>
+    <module name="OuterTypeFilename"/>
+    <module name="AvoidEscapedUnicodeCharacters"/>
+    <module name="ImportOrder">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+  </module>
+  <module name="JavadocPackage"/>
+  <module name="NewlineAtEndOfFile"/>
+  <module name="Translation"/>
+  <module name="FileLength"/>
+  <module name="FileTabCharacter"/>
+  <module name="RegexpSingleline">
+    <property name="format" value="\s+$"/>
+    <property name="message" value="Line has trailing spaces."/>
+  </module>
+  <module name="UniqueProperties"/>
+</module>
